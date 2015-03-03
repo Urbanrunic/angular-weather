@@ -1,0 +1,10 @@
+<div class="location-search">
+	
+	<input type="text" ng-model="mainCtrl.location"><button ng-click="mainCtrl.getLocal()">Find Location</button>
+	<local></local>
+
+	<div class="weather" ng-if="mainCtrl.weather">
+	  <span ng-repeat="local in mainCtrl.weather"><br>{{local.icon}} {{local.summary}}</span>
+	</div>
+
+</div>
